@@ -3,31 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <title>Voxta</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
+  <style>
+    :root {
+      --main-color: #ffffff;
+      --secondary-color: #333333;
+      --bg-color: #111111;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--main-color);
+    }
+
+    .voxta-header h1 {
+      font-size: 4rem;
+      text-shadow: 2px 2px 10px var(--secondary-color);
+    }
+
+    .voxta-links a {
+      margin: 10px;
+      transition: all .3s ease;
+    }
+
+    .voxta-links a:hover {
+      transform: scale(1.1);
+    }
+
+    .voxta-description h2 {
+      font-size: 2rem;
+    }
+  </style>
 </head>
 <body>
 
-  <section class="bg-primary text-black" style="background-image: url('voxta-banner.webp'); background-size: cover; background-position: 0% 38%; padding: 140px 0 140px;">
-    <div class="container">
+  <section class="voxta-header bg-primary text-black" style="background-image: url('voxta-banner.webp'); background-size: cover; background-position: center; padding: 140px 0;">
+    <div class="container text-center">
         <h1>Voxta</h1>
         <p>Your speech-driven AI companion backend</p>
     </div>
   </section>
 
-  <section class="text-center my-3">
-    <a href="https://github.com/voxta-ai" target="_blank" class="mx-2">GitHub</a>
-    <a href="https://www.youtube.com/@Voxta" target="_blank" class="mx-2">YouTube</a>
-    <a href="https://twitter.com/VoxtaAi" target="_blank" class="mx-2">Twitter</a>
-    <a href="https://www.patreon.com/Voxta/posts" target="_blank" class="mx-2">Patreon</a>
+  <section class="voxta-links text-center my-3">
+    <a href="https://github.com/voxta-ai" target="_blank">GitHub</a>
+    <a href="https://www.youtube.com/@Voxta" target="_blank">YouTube</a>
+    <a href="https://twitter.com/VoxtaAi" target="_blank">Twitter</a>
+    <a href="https://www.patreon.com/Voxta/posts" target="_blank">Patreon</a>
   </section>
 
-  <section class="container my-5">
-    <h2>Voxta is a speech-driven AI companion backend.</h2>
-    <p>Whether you just feel like talking, or interact with a virtual reality 3D model, Voxta is the way to go.</p>
-    <p>Host your own AI using Text Generation Web UI, KoboldAI and many others.</p>
-    <p>Connect to AI providers such as Open AI, OpenRouter, NovelAI and many others.</p>
-    <p>Features characters, summarization-based memory, prompt template customization and much more.</p>
+  <section class="voxta-description container my-5">
+    <h2>What is Voxta?</h2>
+    <p>Whether you just feel like talking, or want to interact with a virtual reality 3D model, Voxta's got you covered.</p>
+    <p>Host your own AI with tools like Text Generation Web UI, KoboldAI, and more.</p>
+    <p>Integrate with AI providers such as Open AI, OpenRouter, NovelAI, etc.</p>
+    <p>We offer character customization, summarization-based memory, prompt template adjustments, and a lot more.</p>
   </section>
 
 </body>
