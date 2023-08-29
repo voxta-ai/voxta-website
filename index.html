@@ -1,63 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Voxta</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
-  <style>
-    :root {
-      --main-color: #ffffff;
-      --secondary-color: #333333;
-      --bg-color: #111111;
-    }
-
-    body {
-      background-color: var(--bg-color);
-      color: var(--main-color);
-    }
-
-    .voxta-header h1 {
-      font-size: 4rem;
-      text-shadow: 2px 2px 10px var(--secondary-color);
-    }
-
-    .voxta-links a {
-      margin: 10px;
-      transition: all .3s ease;
-    }
-
-    .voxta-links a:hover {
-      transform: scale(1.1);
-    }
-
-    .voxta-description h2 {
-      font-size: 2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+    integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/96270001c2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <section class="voxta-header bg-primary text-black" style="background-image: url('voxta-banner.webp'); background-size: cover; background-position: center; padding: 140px 0;">
+  <section class="voxta-header bg-primary text-black"
+    style="background-image: url('voxta-banner.webp'); background-size: cover; background-position: center; padding: 140px 0;">
     <div class="container text-center">
-        <h1>Voxta</h1>
-        <p>Your speech-driven AI companion backend</p>
+      <h1>Voxta</h1>
+      <p>Your speech-driven AI companion backend</p>
     </div>
   </section>
 
   <section class="voxta-links text-center my-3">
-    <a href="https://github.com/voxta-ai" target="_blank">GitHub</a>
-    <a href="https://www.youtube.com/@Voxta" target="_blank">YouTube</a>
-    <a href="https://twitter.com/VoxtaAi" target="_blank">Twitter</a>
-    <a href="https://www.patreon.com/Voxta/posts" target="_blank">Patreon</a>
+    <a href="https://github.com/voxta-ai" title="Voxta on GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.youtube.com/@Voxta" title="Voxta on YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://twitter.com/VoxtaAi" title="Voxta on Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.patreon.com/Voxta/posts" title="Voxta on Patreon"><i class="fa-brands fa-patreon"></i></a>
   </section>
 
-  <section class="voxta-description container my-5">
-    <h2>What is Voxta?</h2>
-    <p>Whether you just feel like talking, or want to interact with a virtual reality 3D model, Voxta's got you covered.</p>
-    <p>Host your own AI with tools like Text Generation Web UI, KoboldAI, and more.</p>
-    <p>Integrate with AI providers such as Open AI, OpenRouter, NovelAI, etc.</p>
-    <p>We offer character customization, summarization-based memory, prompt template adjustments, and a lot more.</p>
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="overview-section">
+          <h3>Natural conversations with AI characters</h3>
+          <p>Talk with a virtual friend, have fun with a character, and interact with them in virtual reality. Unrestricted.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="voxta-card">
+          <h3>Bring your own AI</h3>
+          <p>Supports multiple Large Language Model programs, such as:</p>
+          <ul>
+            <li>KoboldAI</li>
+            <li>Oobabooga's Text Generation Web UI</li>
+            <li>Hugging Face's Text Generation Inference</li>
+            <li>OpenAI GPT-3.5 and GPT-4</li>
+            <li>OpenRouter</li>
+            <li>NovelAI</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="voxta-card">
+          <h3>Speech</h3>
+          <p>You can go with what works best for you and your budget.</p>
+          <ul>
+            <li>Azure Speech Service</li>
+            <li>Windows Speech</li>
+            <li>NovelAI</li>
+            <li>ElevenLabs</li>
+            <li>Vosk</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="voxta-card">
+          <h3>Virtual avatar</h3>
+          <p>See, touch, and interact with a virtual 3D model</p>
+          <p>(We won't say more about it here!)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="voxta-card">
+          <h3>Multicultural</h3>
+          <p>There are options for other languages, including speech transcription, speech synthesis, large language
+            models, and character definitions.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="voxta-card">
+          <h3>Features</h3>
+          <ul>
+            <li>Tavern character cards support</li>
+            <li>Customizable prompts (Scriban templates)</li>
+            <li>AI text generation adapted for speech</li>
+            <li>Wake word support (Azure)</li>
+            <li>Peek inside the AI using "Analysis mode"</li>
+            <li>Keyword and summarization memory</li>
+            <li>Action inference: Avatars can act</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="voxta-card">
+          <h3>Open source</h3>
+          <p>While we will begin with Patreon-only users, the goal is for Voxta to be open source, and community-driven.
+          </p>
+          <p>We hope to see many front-ends and contributors in the future!</p>
+        </div>
+      </div>
+    </div>
   </section>
+
 
 </body>
+
 </html>
