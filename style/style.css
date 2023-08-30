@@ -61,7 +61,7 @@ body {
 }
 
 .overview-section {
-  background-color: rgba(0, 0, 0, 0.05);  /* Different background color */
+  background-color: rgba(0, 0, 0, 0.05);
   padding: 2rem 1rem;
   border-radius: 10px;
   margin: 1rem 0;
@@ -69,10 +69,32 @@ body {
 }
 
 .overview-section h3 {
-  font-size: 2rem;  /* Bigger font */
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .overview-section p {
-  font-size: 1.2rem;  /* Slightly bigger text */
+  font-size: 1.2rem;
+}
+
+.responsive-iframe {
+  width: 800px;
+  height: 450px;
+}
+
+@media (max-width: 991px) {
+  .voxta-card {
+    height: 428px;
+  }
+
+  .responsive-iframe {
+    width: 480px;
+    height: 270px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .voxta-title {
+    margin-right: 226px;
+  }
 }
