@@ -84,12 +84,16 @@ body {
 
 @media (max-width: 991px) {
   .voxta-card {
-    height: 428px;
+    height: auto;
   }
 
   .responsive-iframe {
     width: 480px;
     height: 270px;
+  }
+
+  .fa, .fab {
+    font-size: 2em;
   }
 }
 
